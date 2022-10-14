@@ -3,11 +3,10 @@ let app = express();
 
 console.log('Hello World');
 
-app.get("/",homepage);
+app.get("/", (req, res) => {
+  res.send("Hello Express");
+} );
 
-homepage(req, res) {
-  res.send('Hello Express');
-}
 
 
 
